@@ -1,0 +1,74 @@
+.navigation-container {
+    border: 1px solid magenta;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .burger-logo-container {
+        border: 1px solid blue;
+        display: flex;
+        gap: 17px;
+
+        .menu {
+            background-color: $blackOpacity;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            
+            .slide-menu {
+                background-color: white;
+                height: 100%;
+                width: 67vw;
+                padding: 25px;
+
+                ul {
+                    color: #000;
+                    font-size: 1.13rem;
+                    font-weight: 700;
+                    margin-top: 47px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.4rem;
+
+                    a, :active, :visited {
+                        color: #000;
+                        text-decoration: unset;
+
+                        &:hover {
+                            text-decoration: underline;
+                            opacity: 0.75;
+                        }
+                    }
+
+
+
+                    li {
+                        // margin-top: 1.4rem;
+
+                        a{
+                        // color: #000;
+                        // font-weight: 700;
+                        // font-size: 1.13rem;
+                    }    
+                    }
+                }
+        }
+        }
+    }
+
+    .icons-menu-container {
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+        .avatar {
+            height: 1.6rem;
+        }
+    }
+    
+}

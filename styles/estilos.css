@@ -1,0 +1,59 @@
+:root {
+    --globalFont: 'Kumbh Sans', sans-serif;
+
+    --fontSizeParagraph: 16px;
+
+    --primaryOrange: hsl(26, 100%, 55%);
+    --primaryPaleOrange: hsl(25, 100%, 94%);
+
+    --veryDark: hsl(220, 13%, 13%);
+    --darkGrey: hsl(220, 14%, 75%);
+    --blackOpacity: hsl(0, 0%, 0%);
+    --lightGray: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+/* Generales */
+.hidden {
+    display: none;
+}
+
+.navigation-container {
+    border: 1px solid magenta;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 24px; */
+    padding: 20px;
+}
+
+.burger-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    gap: 17px;
+}
+
+
+
+.icons-menu-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    gap: 25px;
+}
+
+.avatar img {
+    height: 25px;
+    /* margin-left: 10px; */
+    
+}
