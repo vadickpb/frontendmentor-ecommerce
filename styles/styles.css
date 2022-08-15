@@ -312,13 +312,14 @@ a {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 18px 25px;
+  padding: 1rem;
   cursor: pointer;
   background-color: hsl(26deg, 100%, 55%);
   border: none;
   border-radius: 5px;
   width: 100%;
   transition: all 0.3s;
+  height: 3.6rem;
 }
 .product-container .button-add-cart:hover {
   opacity: 0.5;
@@ -384,8 +385,54 @@ a {
   }
   .brand-container .light-container .product-hero {
     width: 585px;
-    padding: 5.5rem 4.3rem;
+    padding: 5.5rem 4.3rem 1.8rem 4.3rem;
     height: unset;
     border-radius: 100px;
+  }
+  .brand-container .thumb-images {
+    margin-left: 4rem;
+    display: block;
+  }
+  .brand-container .thumb-images img {
+    width: 16%;
+    border-radius: 5px;
+    margin-right: 2.3rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .brand-container .thumb-images img:hover {
+    opacity: 0.75;
+    border: 1px solid hsl(26deg, 100%, 55%);
+  }
+  .brand-container .product-container {
+    padding: 5rem 3.3rem;
+    margin-top: 4.3rem;
+  }
+  .brand-container .product-container h4 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  .brand-container .product-container h2 {
+    font-size: 2.8rem;
+  }
+  .brand-container .product-container .price-container {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .brand-container .product-container .price-container .price {
+    margin-bottom: 1rem;
+  }
+  .brand-container .product-container .button-count-container {
+    display: flex;
+    gap: 1rem;
+  }
+  .brand-container .product-container .button-count-container .count-container {
+    width: 34%;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .brand-container .product-container .button-count-container .button-add-cart {
+    width: 60%;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -27,7 +27,7 @@
                     img {
                         display: none;
                     }
-
+                    
                     ul {
                         flex-direction: row;
                         gap: 2rem;
@@ -58,13 +58,76 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
+
+
         .light-container {
     
             .product-hero {
                 width: 585px;
-                padding: 5.5rem 4.3rem;
+                padding: 5.5rem 4.3rem 1.8rem 4.3rem;
                 height: unset;
                 border-radius: 100px;
+            }
+        }
+
+        .thumb-images {
+            margin-left: 4rem;
+            display: block;
+
+            img {
+                width: 16%;
+                border-radius: 5px;
+                margin-right: 2.3rem;
+                transition: all 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.75;
+                    border: 1px solid $primaryOrange;
+
+                }
+            }
+
+        }
+
+        .product-container {
+            padding: 5rem 3.3rem;
+            margin-top: 4.3rem;
+
+            
+            h4 {
+                font-size: 16px;
+                letter-spacing: 1px;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-size: 2.8rem;
+            } 
+
+            .price-container {
+                display: block;
+                margin-bottom: 2rem;
+
+                .price {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .button-count-container {
+                display: flex;
+                gap: 1rem;
+
+                .count-container {
+                    width: 34%;
+                    justify-content: center;
+                    gap: 2rem;
+                }
+
+                .button-add-cart {
+                    width: 60%;
+                }
             }
         }
 
