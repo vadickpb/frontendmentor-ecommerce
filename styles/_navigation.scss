@@ -6,24 +6,52 @@
     align-items: center;
     padding: 20px;
 
+    position: relative;
+
     .burger-logo-container {
         border: 1px solid blue;
         display: flex;
         gap: 17px;
 
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            cursor: pointer;
+
+            .line {
+                background-color: $darkGrey;
+                height: 0.3rem;
+                width: 1.5rem;
+            }
+        }
+
         .menu {
             background-color: $blackOpacity;
             position: fixed;
+            z-index: 5;
             top: 0;
             left: 0;
             right: 0;
             height: 100vh;
-            
+
             .slide-menu {
                 background-color: white;
                 height: 100%;
                 width: 67vw;
                 padding: 25px;
+                transform: all 0.5s;
+
+                img {
+                    transition: transform 0.5s ease;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: rotate(90deg);
+                    }
+                }   
 
                 ul {
                     color: #000;
@@ -34,7 +62,9 @@
                     flex-direction: column;
                     gap: 1.4rem;
 
-                    a, :active, :visited {
+                    a,
+                    :active,
+                    :visited {
                         color: #000;
                         text-decoration: unset;
 
@@ -44,31 +74,129 @@
                         }
                     }
 
-
-
-                    li {
-                        // margin-top: 1.4rem;
-
-                        a{
-                        // color: #000;
-                        // font-weight: 700;
-                        // font-size: 1.13rem;
-                    }    
-                    }
                 }
-        }
+            }
         }
     }
 
-    .icons-menu-container {
-        border: 1px solid red;
-        display: flex;
-        align-items: center;
-        gap: 22px;
+    .cart {
+        z-index: 3;
+        position: absolute;
+        right: 2%;
+        left: 2%;
+        bottom: -260px;
+        
+        background-color: white;
+        height: 250px;
+        border-radius: 10px;
 
-        .avatar {
-            height: 1.6rem;
+        padding: 25px 25px;
+
+        .title {
+
+            font-weight: bold;
+            border-bottom: 1px solid $darkGrey;
+            padding-bottom: 24px;
+            margin-bottom: 20px;
         }
+
+        .cart-product {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 27px;
+            
+            .description {
+                color: $darkGrey;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .cart-price {
+                color: $darkGrey;
+                font-size: 1.1rem;
+
+                span {
+                    color: $veryDark;
+                    font-weight: bold;
+                }
+            }
+            
+
+            .cart-image {
+                height: 50px;
+                width: 50px;
+            }
+            .cart-delete {
+                height: 17px;
+                width: 15px;
+                cursor: pointer;
+            }
+        }
+
+        .checkout-button {
+            padding: 18px 25px;
+            cursor: pointer;
+            background-color: $primaryOrange;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s;
+
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+
+
     }
-    
 }
+
+.icons-menu-container {
+    border: 1px solid red;
+    
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    .btn-cart{
+        position: relative;
+        img{
+            cursor: pointer;
+        }
+
+
+        .count-cart {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+
+            background-color: $primaryOrange;
+            color: white;
+            
+            font-size: 9px;
+            font-weight: 700;
+
+            padding: 1px 5px;
+
+            border-radius: 5px;
+
+        }
+    }
+
+    .avatar {
+        height: 1.6rem;
+        cursor: pointer;
+        border-radius: 50%;
+
+        &:hover {
+            border: 1px solid $primaryOrange;
+        }
+    }
+}
+

@@ -1,0 +1,75 @@
+@media screen and (min-width: 1440px){
+    .container {
+        width: 80%;
+        margin: 0 auto;
+
+        .navigation-container {
+            padding: 2rem 1.3rem;
+
+            .hamburger {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+                background: unset;
+                position: unset;
+                z-index: -2;
+                height: unset;
+                padding: 0px;
+                margin-left: 2rem;
+                .slide-menu {
+                    background: unset;
+                    height: unset;
+                    width: unset;
+                    padding: 0;
+                    
+                    img {
+                        display: none;
+                    }
+
+                    ul {
+                        flex-direction: row;
+                        gap: 2rem;
+                        margin: 0;
+
+                        li {
+                            color: $darkGrey;
+                            font-weight: bold;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .icons-menu-container{
+                gap: 3rem;
+
+                .avatar {
+                    height: 3rem;
+                }
+            }
+        }
+    }
+
+    // lightbox
+
+    .brand-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .light-container {
+    
+            .product-hero {
+                width: 585px;
+                padding: 5.5rem 4.3rem;
+                height: unset;
+                border-radius: 100px;
+            }
+        }
+
+    }
+
+
+    
+}
