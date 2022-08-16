@@ -1,17 +1,19 @@
 .navigation-container {
-    border: 1px solid magenta;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+
+    padding: 2rem 2.4rem 2.7rem 2rem;
 
     position: relative;
 
     .burger-logo-container {
-        border: 1px solid blue;
         display: flex;
-        gap: 17px;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.6rem;
+        justify-content: space-between;
 
         .hamburger {
             display: flex;
@@ -41,7 +43,7 @@
                 background-color: white;
                 height: 100%;
                 width: 67vw;
-                padding: 25px;
+                padding: 2.3rem;
                 transform: all 0.5s;
 
                 img {
@@ -55,12 +57,12 @@
 
                 ul {
                     color: #000;
-                    font-size: 1.13rem;
+                    font-size: 1.8rem;
                     font-weight: 700;
-                    margin-top: 47px;
+                    margin-top: 5rem;
                     display: flex;
                     flex-direction: column;
-                    gap: 1.4rem;
+                    gap: 2.3rem;
 
                     a,
                     :active,
@@ -158,8 +160,6 @@
 }
 
 .icons-menu-container {
-    border: 1px solid red;
-    
     display: flex;
     align-items: center;
     gap: 22px;

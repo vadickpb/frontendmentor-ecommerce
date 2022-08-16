@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 62.5%;
 }
 
 body {
@@ -26,18 +26,19 @@ a {
 }
 
 .navigation-container {
-  border: 1px solid magenta;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 2rem 2.4rem 2.7rem 2rem;
   position: relative;
 }
 .navigation-container .burger-logo-container {
-  border: 1px solid blue;
   display: flex;
-  gap: 17px;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+  justify-content: space-between;
 }
 .navigation-container .burger-logo-container .hamburger {
   display: flex;
@@ -65,7 +66,7 @@ a {
   background-color: white;
   height: 100%;
   width: 67vw;
-  padding: 25px;
+  padding: 2.3rem;
   transform: all 0.5s;
 }
 .navigation-container .burger-logo-container .menu .slide-menu img {
@@ -77,12 +78,12 @@ a {
 }
 .navigation-container .burger-logo-container .menu .slide-menu ul {
   color: #000;
-  font-size: 1.13rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-top: 47px;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 2.3rem;
 }
 .navigation-container .burger-logo-container .menu .slide-menu ul a,
 .navigation-container .burger-logo-container .menu .slide-menu ul :active,
@@ -160,7 +161,6 @@ a {
 }
 
 .icons-menu-container {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   gap: 22px;
@@ -235,9 +235,9 @@ a {
 }
 
 .product-container {
-  padding: 15px 21px;
+  padding: 2rem 2.4rem 4.4rem 2.4rem;
 }
-.product-container h4 {
+.product-container .title-company {
   color: hsl(26deg, 100%, 55%);
   text-transform: uppercase;
   font-weight: bold;
@@ -245,17 +245,17 @@ a {
   word-spacing: 3px;
   margin-bottom: 11px;
 }
-.product-container h2 {
+.product-container .title-product {
   font-weight: 700;
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 4.5rem;
+  margin-bottom: 1.6rem;
 }
-.product-container p {
+.product-container .description-product {
   color: hsl(220deg, 14%, 75%);
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 24px;
-  margin-bottom: 30px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.5rem;
 }
 .product-container .price-container {
   display: flex;
@@ -268,69 +268,70 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 1.6rem;
 }
 .product-container .price-container .price-group .price {
-  font-size: 31px;
+  font-size: 3.1rem;
   font-weight: 700;
 }
 .product-container .price-container .price-group .discount {
-  padding: 5px;
   color: hsl(26deg, 100%, 55%);
   background-color: hsl(25deg, 100%, 94%);
+  align-items: center;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 .product-container .price-container .old-price {
   font-weight: 700;
+  font-size: 1.6rem;
   color: hsl(220deg, 14%, 75%);
 }
 .product-container .count-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 25px;
+  padding: 1.2rem 2.4rem;
   background-color: hsl(223deg, 64%, 98%);
   border-radius: 5px;
   gap: 20px;
-  margin-bottom: 15px;
+  margin-top: 2rem;
 }
 .product-container .count-container img {
   cursor: pointer;
   padding: 1rem;
-  border-radius: 5%;
+  border-radius: 0.5rem;
 }
 .product-container .count-container img:hover {
   opacity: 0.5;
   background-color: hsl(25deg, 100%, 94%);
 }
 .product-container .count-container .count {
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .product-container .button-add-cart {
+  background-color: hsl(26deg, 100%, 55%);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  padding: 1rem;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 1.9rem;
+  font-weight: 700;
+  font-size: 1.55rem;
   cursor: pointer;
-  background-color: hsl(26deg, 100%, 55%);
   border: none;
-  border-radius: 5px;
+  border-radius: 1rem;
   width: 100%;
   transition: all 0.3s;
-  height: 3.6rem;
 }
 .product-container .button-add-cart:hover {
   opacity: 0.5;
 }
-.product-container .button-add-cart .button-text {
-  color: white;
-  font-weight: 700;
-  font-size: 16px;
-}
 .product-container .button-add-cart img {
-  height: 16px;
+  height: 1.5rem;
 }
 
 @media screen and (min-width: 1440px) {
@@ -339,100 +340,108 @@ a {
     margin: 0 auto;
   }
   .container .navigation-container {
-    padding: 2rem 1.3rem;
+    border-bottom: 1px solid hsl(220deg, 14%, 75%);
   }
-  .container .navigation-container .hamburger {
+  .container .navigation-container .burger-logo-container {
+    gap: 3.4rem;
+  }
+  .container .navigation-container .burger-logo-container .hamburger {
     display: none;
   }
   .container .navigation-container .menu {
     display: block;
     background: unset;
     position: unset;
-    z-index: -2;
     height: unset;
-    padding: 0px;
-    margin-left: 2rem;
   }
   .container .navigation-container .menu .slide-menu {
     background: unset;
-    height: unset;
     width: unset;
-    padding: 0;
   }
   .container .navigation-container .menu .slide-menu img {
     display: none;
   }
   .container .navigation-container .menu .slide-menu ul {
     flex-direction: row;
-    gap: 2rem;
     margin: 0;
-  }
-  .container .navigation-container .menu .slide-menu ul li {
+    font-size: 1.5rem;
+    font-weight: 400;
     color: hsl(220deg, 14%, 75%);
-    font-weight: bold;
-    font-size: 1rem;
+    gap: 3.3rem;
+  }
+  .container .navigation-container .menu .slide-menu ul a {
+    display: block;
   }
   .container .navigation-container .icons-menu-container {
-    gap: 3rem;
+    gap: 4.5rem;
   }
   .container .navigation-container .icons-menu-container .avatar {
-    height: 3rem;
+    height: 5rem;
   }
   .brand-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 9rem 7rem;
   }
   .brand-container .light-container .product-hero {
-    width: 585px;
-    padding: 5.5rem 4.3rem 1.8rem 4.3rem;
+    width: 44.5rem;
     height: unset;
-    border-radius: 100px;
+    border-radius: 5%;
+  }
+  .brand-container .light-container .arrow {
+    display: none;
   }
   .brand-container .thumb-images {
-    margin-left: 4rem;
-    display: block;
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
   }
   .brand-container .thumb-images img {
-    width: 16%;
-    border-radius: 5px;
-    margin-right: 2.3rem;
+    width: 20%;
+    border-radius: 10%;
     transition: all 0.3s ease;
     cursor: pointer;
   }
-  .brand-container .thumb-images img:hover {
-    opacity: 0.75;
-    border: 1px solid hsl(26deg, 100%, 55%);
+  .brand-container .thumb-images .active {
+    border: 2px solid hsl(26deg, 100%, 55%);
+    opacity: 0.8;
   }
   .brand-container .product-container {
-    padding: 5rem 3.3rem;
-    margin-top: 4.3rem;
+    padding: 6.1rem 2rem 6.1rem 12.5rem;
+    width: 100%;
   }
-  .brand-container .product-container h4 {
-    font-size: 16px;
+  .brand-container .product-container .title-company {
+    font-size: 1.4rem;
     letter-spacing: 1px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
   }
-  .brand-container .product-container h2 {
-    font-size: 2.8rem;
+  .brand-container .product-container .title-product {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    margin-bottom: 3.5rem;
   }
   .brand-container .product-container .price-container {
-    display: block;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
-  .brand-container .product-container .price-container .price {
-    margin-bottom: 1rem;
+  .brand-container .product-container .price-container .price-group {
+    margin-bottom: 0.5rem;
   }
   .brand-container .product-container .button-count-container {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
   }
   .brand-container .product-container .button-count-container .count-container {
-    width: 34%;
-    justify-content: center;
-    gap: 2rem;
+    width: 62%;
+    padding: 1.2rem 0.5rem;
+    border-radius: 1rem;
   }
   .brand-container .product-container .button-count-container .button-add-cart {
-    width: 60%;
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
